@@ -1,64 +1,84 @@
 # Adnírcio Inocêncio
 
-**Software / Full Stack Developer** · Angola  
-Estudante de Engenharia Informática · candidato a Técnico Júnior / Full Stack / Backend / Software Developer
+**Full Stack Developer** — Luanda, Angola
 
-Constrói software real: APIs, autenticação, RBAC, testes, deployment e fundamentos de computação — sem repositórios artificiais.
+Estudante de Engenharia Informática, à procura de uma primeira oportunidade júnior.
 
----
-
-### Stack
-
-`JavaScript` · `TypeScript` · `React` · `Node.js` · `Express` · `PHP` · `MySQL` · `REST` · `JWT` · `Docker` · `Jest` · `Vitest` · `Playwright` · `GitHub Actions`
-
-Foco também em **segurança** (sessões, hashing, headers, uploads) e **engenharia** (docs, CI, tratamento de erros).
+Escrevo software que se pode abrir e usar. Cada projeto abaixo está no ar, com contas de
+demonstração, testes automatizados e documentação — não são exercícios de portefólio com
+capturas de ecrã bonitas e nada por trás.
 
 ---
 
-### Projetos em destaque
+## FinTrack Angola — finanças pessoais em Kwanzas
 
-#### 1. [colegio-mara-lu](https://github.com/keny343/colegio-mara-lu) — Full Stack School Platform
-Inscrições, portal académico, RBAC, JWT/cookies, testes (Jest + Playwright), CI.  
-**Stack:** React · Node/Express · MySQL · Vercel · Render  
-**API:** https://colegio-mara-lu-backend.onrender.com
+**[Abrir a aplicação](https://fintrack-angola.vercel.app)** · [código](https://github.com/keny343/fintrack-angola)
 
-#### 2. [sigdoc](https://github.com/keny343/sigdoc) — Document Management & Access Control
-Ciclo de vida documental, classificação de acesso, 2FA por email, mapa Leaflet, API REST.  
-**Stack:** PHP · MySQL · Docker · Render · Aiven (TLS)  
-**Live:** https://sigdoc-1fsj.onrender.com/ · [Login](https://sigdoc-1fsj.onrender.com/auth/login.php)
+Entra com `adnircio@fintrack.ao` / `senha-forte-2026` — a conta tem três meses de histórico.
 
-#### 3. [simplescript](https://github.com/keny343/simplescript) — Educational Language / Interpreter
-Lexer → parser → AST → análise semântica → interpretador · CLI · playground Vite · Vitest · CI.  
-**Stack:** TypeScript · Node.js
+Orçamentos, objetivos de poupança, despesas recorrentes, importação e exportação de CSV, e um
+resumo mensal escrito por um modelo de linguagem. Esse resumo tem uma particularidade: **os
+números são verificados antes de chegar ao ecrã**. O backend calcula as métricas, o modelo só
+pode usar essas, e se inventar ou arredondar um valor a resposta é descartada em favor de um
+resumo determinístico.
 
----
+O dinheiro é guardado em centavos inteiros — nunca em vírgula flutuante — e formatado em pt-AO.
 
-### O que estes projetos demonstram
-
-| Área | Evidência |
-|------|-----------|
-| Full Stack | SPA + API + MySQL (Mara & Lu, SIGDoc) |
-| Backend / PHP | SIGDoc enterprise-style + REST |
-| Computer Science | SimpleScript (compiler pipeline) |
-| Security | Auth, RBAC, TLS, cookies httpOnly, uploads |
-| Quality | Testes, CI, documentação (`docs/`) |
-| DevOps | Docker, Render, health checks |
+TypeScript de ponta a ponta · React · Express · PostgreSQL · Vitest com Postgres em WebAssembly · Vercel + Render
 
 ---
 
-### A construir a seguir
+## Colégio Mara & Lu — gestão escolar com quatro papéis
 
-Projetos planeados (não inventados como concluídos): FinTrack Angola · Karga Logistics · Payments API · AI Developer Assistant.
+**[Abrir a aplicação](https://colegio-mara-lu.vercel.app)** · [código](https://github.com/keny343/colegio-mara-lu)
+
+Quatro contas, todas com a senha `demo1234`:
+`admin.demo@colegio.ao` · `coordenador.demo@colegio.ao` · `professor.demo@colegio.ao` · `aluno.demo@colegio.ao`
+
+O ciclo completo: candidatura pública → análise pela direção → matrícula → ano letivo com
+pautas, faltas, horários e mensagens. O que o torna interessante não é a lista de funcionalidades,
+é o controlo de acessos: o coordenador vê o mesmo sistema estreitado ao seu curso e nível, e essa
+fronteira é imposta na API, não escondida na interface.
+
+React · Node/Express · MySQL · JWT em cookies httpOnly · Jest + Playwright · CI no GitHub Actions
 
 ---
 
-### Contacto
+## SimpleScript — uma linguagem e o seu interpretador
 
-- GitHub: [keny343](https://github.com/keny343)
-- Aberto a oportunidades júnior em Full Stack / Backend / Software Development
+[código](https://github.com/keny343/simplescript) · [documentação da linguagem](https://github.com/keny343/simplescript/tree/main/docs)
+
+Lexer → parser → AST → análise semântica → interpretador, escrito de zero em TypeScript e sem
+uma única dependência de execução. Tem CLI, exemplos e um playground no browser. Fi-lo para
+deixar de tratar compiladores como magia.
 
 ---
 
-### Currently learning
+## SIGDoc — gestão documental e controlo de acesso
 
-TypeScript avançado · segurança web (OWASP) · CI/CD · modelação de domínio · observabilidade
+[código](https://github.com/keny343/sigdoc)
+
+Ciclo de vida de documentos com classificação de acesso, 2FA por email, tokens CSRF em todas as
+ações destrutivas e limitação de tentativas de login por conta e por IP. É o projeto mais antigo
+e o único em PHP, e foi onde aprendi segurança web a corrigir os meus próprios erros.
+
+PHP 8.2 · MySQL · Docker · API REST
+
+> A instância pública está sem base de dados desde que o serviço gratuito expirou, por isso não
+> publico um link que dê erro. O código e as decisões de segurança estão todos no repositório.
+
+---
+
+## Como trabalho
+
+Testes onde o custo de um erro é real: o domínio financeiro, as regras de acesso, a política de
+senhas, os filtros de upload. CI que corre instalação, testes e build a cada push. Documentação
+que explica decisões em vez de repetir o código. Segredos só em variáveis de ambiente.
+
+Segurança não é uma secção no fim do README: sessões em cookies httpOnly, hashing com bcrypt,
+CSRF, limitação de tentativas, SQL sempre parametrizado, headers e filtros de upload.
+
+## Contacto
+
+GitHub [@keny343](https://github.com/keny343) · aberto a oportunidades júnior em Full Stack,
+Backend ou Software Development.
